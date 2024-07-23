@@ -91,7 +91,6 @@ p {
   }
 }
 
-
 /* Estilos del MAIN - DESKTOP Y TABLET */
 
 @media screen and (min-width: 768px) {
@@ -99,7 +98,6 @@ p {
     font-size: 50px;
   }
 }
-
 
 /* Estilos de la grilla de novedades - Home - MOBILE*/
 
@@ -260,7 +258,6 @@ p {
   }
 }
 
-
 /* Estilos de carousel escuela - Página Escuela - MOBILE/TABLET*/
 
 .escuela-grid {
@@ -281,8 +278,10 @@ p {
   background-color: #000000; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   padding: 10px 10px; /* Relleno del botón */
-  border: none; /* Elimina el borde del botón */
-  cursor: pointer; /* Cambia el cursor a una mano al pasar por encima del botón */
+}
+
+.escuela-boton:active{
+  transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
 }
 
 .escuela-container-link{
