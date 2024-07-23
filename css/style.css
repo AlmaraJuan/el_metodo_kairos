@@ -84,6 +84,18 @@ p {
   border-radius: 15px;
 }
 
+.button-black { /* estilos de los botones negros en las páginas*/
+  font-family: 'roboto', sans-serif;
+  font-size: 15px;
+  background-color: #000000; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 10px; /* Relleno del botón */
+}
+
+.button-black:active{
+  transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
+}
+
 @media screen and (max-width: 767px) {
   .copete {
     font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
@@ -186,18 +198,6 @@ p {
   font-weight: 700;
 }
 
-.cartelera-grid button {
-  font-family: 'roboto', sans-serif;
-  font-size: 15px;
-  background-color: #000000; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
-  padding: 10px 10px; /* Relleno del botón */
-}
-
-.cartelera-grid button:active{
-  transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
-}
-
 .overlay{
   display: none; /* No se muestra la descripción de la obra en mobile y tablet */
 }
@@ -267,18 +267,6 @@ p {
   color: white;
   padding: 5px;
   font-style:oblique;
-}
-
-.escuela-boton {
-  font-family: 'roboto', sans-serif;
-  font-size: 15px;
-  background-color: #000000; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
-  padding: 10px 10px; /* Relleno del botón */
-}
-
-.escuela-boton:active{
-  transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
 }
 
 .escuela-container-link{
