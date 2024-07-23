@@ -5,12 +5,6 @@
   color: black; /* aplica a todo el HTML y pisa el color por default de boostrap*/
 }
 
-@media screen and (max-width: 767px) {
-  .copete {
-    font-size: 16px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
-  }
-}
-
 /* Estilos del HEADER */
 
 header{
@@ -59,8 +53,7 @@ nav ul li {
   padding: 8px;
 }
 
-
-/* Estilos del MAIN */
+/* Estilos del MAIN - MOBILE */
 
 .home-banner {
     width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
@@ -69,8 +62,8 @@ nav ul li {
 
 h1 {
   font-family: 'roboto', sans-serif; 
-  font-size: 50px;
-  padding-left: 10px; 
+  font-size: 40px;
+  padding-left: 8px; 
   margin-top: 10px;
 }
 
@@ -82,14 +75,31 @@ h2 {
 
 p {
   font-family: 'roboto', sans-serif; 
-  font-size: 20px;
   margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 .carousel-button{ /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
   background-color: #75c645;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 767px) {
+  .copete {
+    font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
+  }
+}
+
+
+/* Estilos del MAIN - DESKTOP Y TABLET */
+
+@media screen and (min-width: 768px) {
+  h1{
+    font-size: 50px;
+  }
+}
+
 
 /* Estilos de la grilla de novedades - Home - MOBILE*/
 
