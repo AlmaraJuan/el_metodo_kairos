@@ -1,11 +1,10 @@
-
-/* Estilos del body */
+/* ESTILOS DE TODO EL HTML */
 
 *{
   color: black; /* aplica a todo el HTML y pisa el color por default de boostrap*/
 }
 
-/* Estilos del HEADER */
+/* ESTILOS DEL HEADER */
 
 header{
   position: sticky; /* Deja el menu fijo en la parte superior*/
@@ -53,12 +52,12 @@ nav ul li {
   padding: 8px;
 }
 
-/* Estilos del MAIN - MOBILE */
+/* ESTILOS DEL MAIN TODO EL SITIO */
 
+/* Estilos del MAIN - MOBILE */
 .home-banner {
     width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
-    display: block; /* Asegura que la imagen sea un elemento de bloque */
-  }
+}
 
 h1 {
   font-family: 'roboto', sans-serif; 
@@ -92,17 +91,17 @@ p {
 }
 
 /* Estilos del MAIN - DESKTOP Y TABLET */
-
 @media screen and (min-width: 768px) {
   h1{
-    font-size: 50px;
+    font-size: 50px; /* Para que el H1 sea más grande en tablet y desktop */
   }
 }
 
-/* Estilos de la grilla de novedades - Home - MOBILE*/
+/* ESTILOS DEL HOME */
 
+/* Estilos de la grilla de novedades - Home - MOBILE*/
 .home-grid {
-  display: none;
+  display: none; /* En mobile no se muestra la grilla*/
 }
 
 .novedades-overlay { /* Texto sobre impreso sobre la imagen del carousel*/
@@ -115,7 +114,6 @@ p {
 }
 
 /* Estilos de la grilla de novedades - Home - TABLET Y DESKTOP*/
-
 @media screen and (min-width: 768px) {
   .home-grid {
     display: grid; /* Grilla */
@@ -140,12 +138,13 @@ p {
   }
 
   .home-carousel{
-    display: none;
+    display: none; /* En tablet y desktop no se muestra el carrousel*/
   }
 }
 
-/* Estilos de la grilla cartelera - Página Cartelera - MOBILE*/
+/* ESTILOS DE LA PÁGINA CARTELERA*/
 
+/* Estilos de la grilla cartelera - Página CARTELERA - MOBILE*/
 .cartelera-grid {
   display: grid; /* Grilla */
   grid-template-columns:  1fr;  /* 1 columnas */
@@ -158,9 +157,9 @@ p {
 
 .grid-obra{
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid #ddd; /* se agrega borde */
+  border-radius: 8px; /* para hacer el borde más redondo */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* se agrega sombra */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -205,24 +204,21 @@ p {
 
 
 /* Estilos de la grilla cartelera - TABLET*/
-
   @media screen and (min-width: 768px) {
     .cartelera-grid{
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; /* En tablet se usan 3 columnas*/
       grid-auto-rows: auto;
     }
   }
 
 /* Estilos de la grilla cartelera - DESKTOP*/
-
 @media screen and (min-width: 1024px) {
   .cartelera-grid{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* En desktop se usan 4 columnas*/
     grid-auto-rows: auto;
   }
 
   /* Para tener texto sobre impreso sobre las imagenes */
-
   .img-overlay {
     position: relative; 
   }
@@ -258,10 +254,11 @@ p {
   }
 }
 
-/* Estilos de carousel escuela - Página Escuela - MOBILE/TABLET*/
+/* ESTILOS DE LA PÁGINA ESCUELA*/
 
+/* Estilos de carousel escuela - Página Escuela - MOBILE/TABLET*/
 .escuela-grid {
-  display: none;
+  display: none; /* En mobile y tablet no se muestra la grilla solo el carrousel*/
 }
 
 .escuela-h2 {
@@ -290,11 +287,8 @@ p {
   margin-top: 5px;
 }
 
-
 /* Estilos de la grilla escuela - Página Escuela - DESKTOP*/
-
 @media only screen and (min-width: 1024px) {
-
   .escuela-grid {
     display: grid; /* Grilla */
     grid-template-columns:  1fr 1fr 1fr; /* 3 columnas */
@@ -312,7 +306,7 @@ p {
   }
 
   .escuela-carousel {
-    display: none;
+    display: none; /* En desktop no se muestra el carousel */
   }
 
   .escuela-link {
@@ -322,7 +316,6 @@ p {
 }
 
 /* Estilos de la grilla de profes - Página Escuela - MOBILE*/
-
 .profes {
   text-align: center;
   font-size: 40px;
@@ -351,7 +344,6 @@ width: 100%;
 }
 
 /* Estilos de la grilla de profes - Página Escuela - TABLET*/
-
 @media screen and (min-width: 768px) {
   .profes-card{
     flex: 50%;
@@ -360,15 +352,15 @@ width: 100%;
 }
 
 /* Estilos de la grilla de profes - Página Escuela - DESKTOP*/
-
 @media only screen and (min-width: 1024px) {
   .profes-card{
     flex: 25%
   }
 }
 
-/* Estilos de prensa con videos de youtube - Página Prensa - MOBILE*/
+/* ESTILOS DE LA PÁGINA PRENSA*/
 
+/* Estilos de prensa con videos de youtube - Página Prensa - MOBILE*/
 .prensa-container{
   display:flex;
   flex-direction: column;
@@ -388,7 +380,6 @@ width: 100%;
 }
 
 /* Estilos de prensa con videos de youtube - Página Prensa - DESKTOP*/
-
 @media only screen and (min-width: 1024px) {
   .prensa-container{
     flex-direction: row;
@@ -399,7 +390,6 @@ width: 100%;
 }
 
 /* Estilos links a las notas - Página Prensa*/
-
 .notas-titulo{
   text-align: center;
   font-size: 30px;
@@ -425,8 +415,9 @@ width: 100%;
   color: purple;
 }
 
-/* Estilos de la grilla de contacto - Página Contacto - MOBILE*/
+/* ESTILOS DE LA PÁGINA CONTACTO*/
 
+/* Estilos de la grilla de contacto - Página Contacto - MOBILE*/
 .contacto-grid {
   display: grid; /* Grilla */
   grid-template-columns: 1fr; /* 1 columna */
@@ -471,10 +462,7 @@ width: 100%;
   font-style: italic;
 }
 
-
 /* Estilos de la grilla de contacto - Página Contacto - DESKTOP*/
-
-
 @media only screen and (min-width: 1024px) {
   .contacto-grid {
     display: grid; /* Grilla */
@@ -492,7 +480,7 @@ width: 100%;
     }
 }
 
-/* Estilos del FOOTER */
+/* ESTILO DEL FOOTER - TODO EL SITIO */
 
 footer {
   text-align: center;
@@ -513,4 +501,3 @@ footer p{
   font-family: 'roboto', sans-serif;
   font-size: 15px;
 }
-  
