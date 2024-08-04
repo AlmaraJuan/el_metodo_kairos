@@ -1,101 +1,49 @@
+@charset "UTF-8";
 /* ESTILOS DE TODO EL HTML */
-
-*{
+* {
   color: black; /* aplica a todo el HTML y pisa el color por default de boostrap*/
 }
 
-/* ESTILOS DEL HEADER */
-
-header{
-  position: sticky; /* Deja el menu fijo en la parte superior*/
-  top: 0px;
-  left:0px;
-  right: 0px;
-  z-index: 2; /* Para que no quede por debajo del overlay */
-}
-
-.navbar-menu{
-  background-color: black;
-}
-
-header img{
-  margin-left: 10px; 
-  width: 150px;
-}
-
-.boton-menu{
-  background-color: #75c645;
-  border-radius: 5px;
-  margin-right: 30px; /* separar del margen derecho el menu desplegable */
-}
-
-nav div{
-  justify-content: right; /* Los item del menu se alinean a la derecha del nav */
-  margin-left: 15px; /* Cuando se despliega el menu collapsado los items se separan del margen izquierdo */
-}
-
-nav ul li {
-  margin-right: 45px; /* Espacio entre los item del menu y el margen derecho*/
-}
-
-.menu-link{
-  color: white;
-  font-family: 'roboto', sans-serif; /* Selecciona la fuente */
-  font-size: 25px;
-  font-weight: bold; 
-  text-decoration: none; /* Elimina el subrayado de los items */
-  transition-duration: 0.6s; /* Tiempo de transcisión con el mouse over */
-}
-
-.menu-link:hover{ 
-  color:#000000; /* cambia color del texto con el mouse over */
-  background-color: #75c645; /* se agrega color de fondo con el mouse over */
-  border-radius: 5px;
-  padding: 8px;
-}
-
 /* ESTILOS DEL MAIN TODO EL SITIO */
-
 /* Estilos del MAIN - MOBILE */
 .home-banner {
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
+  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
 }
 
 h1 {
-  font-family: 'roboto', sans-serif; 
+  font-family: "roboto", sans-serif;
   font-size: 40px;
-  padding-left: 8px; 
+  padding-left: 8px;
   margin-top: 10px;
 }
 
 h2 {
-  font-family: 'roboto', sans-serif; 
+  font-family: "roboto", sans-serif;
   font-size: 30px;
   margin-top: 10px;
 }
 
 p {
-  font-family: 'roboto', sans-serif; 
+  font-family: "roboto", sans-serif;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
 }
 
-.carousel-button{ /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
+.carousel-button { /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
   background-color: #75c645;
   border-radius: 15px;
 }
 
 .button-black { /* estilos de los botones negros en las páginas*/
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 15px;
-  background-color: #000000; /* Color de fondo del botón */
+  background-color: black; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   padding: 10px 10px; /* Relleno del botón */
 }
-
-.button-black:active{
-  transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
+.button-black:active {
+  transform: rotateY("angle"); /* Efecto de "hundimiento" cuando se presiona el botón */
 }
 
 @media screen and (max-width: 767px) {
@@ -103,16 +51,73 @@ p {
     font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
   }
 }
-
 /* Estilos del MAIN - DESKTOP Y TABLET */
 @media screen and (min-width: 768px) {
-  h1{
+  h1 {
     font-size: 50px; /* Para que el H1 sea más grande en tablet y desktop */
   }
 }
+/* ESTILOS DEL HEADER */
+header {
+  position: sticky; /* Deja el menu fijo en la parte superior*/
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2; /* Para que no quede por debajo del overlay */
+}
+header .navbar-menu {
+  background-color: black;
+}
+header .navbar-menu img {
+  margin-left: 10px;
+  width: 150px;
+}
+header .navbar-menu .boton-menu {
+  background-color: #75c645;
+  border-radius: 5px;
+  margin-right: 30px; /* separar del margen derecho el menu desplegable */
+}
+header .navbar-menu div {
+  justify-content: right; /* Los item del menu se alinean a la derecha del nav */
+  margin-left: 15px; /* Cuando se despliega el menu collapsado los items se separan del margen izquierdo */
+}
+header .navbar-menu div ul li {
+  margin-right: 45px; /* Espacio entre los item del menu y el margen derecho*/
+}
+header .navbar-menu div ul li .menu-link {
+  color: white;
+  font-family: "roboto", sans-serif; /* Selecciona la fuente */
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none; /* Elimina el subrayado de los items */
+  transition-duration: 0.6s; /* Tiempo de transcisión con el mouse over */
+}
+header .navbar-menu div ul li .menu-link:hover {
+  color: black; /* cambia color del texto con el mouse over */
+  background-color: #75c645; /* se agrega color de fondo con el mouse over */
+  border-radius: 5px;
+  padding: 8px;
+}
+
+/* ESTILO DEL FOOTER - TODO EL SITIO */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+footer a {
+  text-decoration: none; /* Elimina el subrayado de los links */
+}
+footer a img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+footer p {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+}
 
 /* ESTILOS DEL HOME */
-
 /* Estilos de la grilla de novedades - Home - MOBILE*/
 .home-grid {
   display: none; /* En mobile no se muestra la grilla*/
@@ -131,133 +136,114 @@ p {
 @media screen and (min-width: 768px) {
   .home-grid {
     display: grid; /* Grilla */
-    grid-template-columns:  1fr 1fr 1fr; /* 3 columnas */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
     grid-auto-rows: auto;
-    justify-content: center; 
+    justify-content: center;
     column-gap: 10px; /* separación entre las imagenes */
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
   }
-  
   .home-grid img {
     width: 100%;
     height: 100%;
   }
-  
   .home-grid p {
-    font-family: 'roboto', sans-serif;
+    font-family: "roboto", sans-serif;
     font-size: 18px;
     font-style: italic;
     margin-left: 0px;
   }
-
-  .home-carousel{
+  .home-carousel {
     display: none; /* En tablet y desktop no se muestra el carrousel*/
   }
 }
-
 /* ESTILOS DE LA PÁGINA CARTELERA*/
-
 /* Estilos de la grilla cartelera - Página CARTELERA - MOBILE*/
 .cartelera-grid {
   display: grid; /* Grilla */
-  grid-template-columns:  1fr;  /* 1 columnas */
+  grid-template-columns: 1fr; /* 1 columnas */
   grid-auto-rows: auto;
   column-gap: 10px; /* separación entre las cards horizontales */
   row-gap: 5px; /* separación entre las cards vertical */
   padding-left: 10px;
-  padding-right: 10px; 
+  padding-right: 10px;
 }
-
-.grid-obra{
+.cartelera-grid .grid-obra {
   background-color: #f9f9f9;
   border: 1px solid #ddd; /* se agrega borde */
   border-radius: 8px; /* para hacer el borde más redondo */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* se agrega sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* se agrega sombra */
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 10px;
 }
-
-.cartelera-grid h2 {
+.cartelera-grid .grid-obra h2 {
   background-color: #000000;
   color: white;
   padding: 5px;
-  font-style:oblique;
+  font-style: oblique;
   font-size: 25px;
   margin: 10px 0;
 }
-
-.cartelera-grid img {
+.cartelera-grid .grid-obra .img-overlay img {
   width: 100%;
 }
-
-.cartelera-grid h3{
-  font-family: 'roboto', sans-serif;
+.cartelera-grid .grid-obra .img-overlay .overlay {
+  display: none; /* No se muestra la descripción de la obra en mobile y tablet */
+}
+.cartelera-grid .grid-obra h3 {
+  font-family: "roboto", sans-serif;
   font-size: 20px;
   padding: 10px 5px;
   font-weight: 700;
 }
 
-.overlay{
-  display: none; /* No se muestra la descripción de la obra en mobile y tablet */
-}
-
-
 /* Estilos de la grilla cartelera - TABLET*/
-  @media screen and (min-width: 768px) {
-    .cartelera-grid{
-      grid-template-columns: 1fr 1fr 1fr; /* En tablet se usan 3 columnas*/
-      grid-auto-rows: auto;
-    }
+@media screen and (min-width: 768px) {
+  .cartelera-grid {
+    grid-template-columns: 1fr 1fr 1fr; /* En tablet se usan 3 columnas*/
+    grid-auto-rows: auto;
   }
-
+}
 /* Estilos de la grilla cartelera - DESKTOP*/
 @media screen and (min-width: 1024px) {
-  .cartelera-grid{
+  .cartelera-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr; /* En desktop se usan 4 columnas*/
     grid-auto-rows: auto;
   }
-
-  /* Para tener texto sobre impreso sobre las imagenes */
-  .img-overlay {
-    position: relative; 
+  .cartelera-grid .grid-obra .img-overlay {
+    position: relative; /* Para tener texto sobre impreso sobre las imagenes */
   }
-
-  .img-overlay:hover .overlay{
+  .cartelera-grid .grid-obra .img-overlay:hover .overlay {
     opacity: 1; /* Mostrar la superposición al pasar el mouse */
   }
-  
-  .overlay {
+  .cartelera-grid .grid-obra .img-overlay .overlay {
     position: absolute; /* Posición absoluta para superponerse sobre la imagen */
     top: 0; /* Alinear la superposición con la parte superior de la imagen */
     left: 0; /* Alinear la superposición con la parte izquierda de la imagen */
     width: 100%;
-    height: 100%; 
-    background-color:rgba(117, 198, 69, 0.5); /* Color translúcido */
+    height: 100%;
+    background-color: rgba(117, 198, 69, 0.5); /* Color translúcido */
     opacity: 0; /* Inicialmente transparente */
     transition: 0.4s; /* Transición */
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-  .overlay p {
+  .cartelera-grid .grid-obra .img-overlay .overlay p {
     color: white; /* Color del texto */
     background-color: black;
     width: 100%; /* Para que el background ocupe todo el ancho de la imagen aunque el texto sea corto*/
     font-size: 14px;
-    font-family: 'Roboto', sans-serif; 
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-style: italic;
     padding: 10px;
     margin: 0;
   }
 }
-
 /* ESTILOS DE LA PÁGINA ESCUELA*/
-
 /* Estilos de carousel escuela - Página Escuela - MOBILE/TABLET*/
 .escuela-grid {
   display: none; /* En mobile y tablet no se muestra la grilla solo el carrousel*/
@@ -268,10 +254,10 @@ p {
   background-color: #000000;
   color: white;
   padding: 5px;
-  font-style:oblique;
+  font-style: oblique;
 }
 
-.escuela-container-link{
+.escuela-container-link {
   justify-content: center;
   text-align: center;
   margin-top: 5px;
@@ -281,30 +267,26 @@ p {
 @media only screen and (min-width: 1024px) {
   .escuela-grid {
     display: grid; /* Grilla */
-    grid-template-columns:  1fr 1fr 1fr; /* 3 columnas */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
     grid-auto-rows: auto;
     grid-template-rows: 3fr; /* 3 filas */
-    justify-content: center; 
+    justify-content: center;
     column-gap: 10px; /* separación entre las imagenes */
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
   }
-
   .escuela-grid img {
     width: 100%;
     height: 100%;
   }
-
-  .escuela-carousel {
-    display: none; /* En desktop no se muestra el carousel */
-  }
-
-  .escuela-link {
+  .escuela-grid .escuela-link {
     text-align: center;
     margin-top: 5px;
   }
+  .escuela-carousel {
+    display: none; /* En desktop no se muestra el carousel */
+  }
 }
-
 /* Estilos de la grilla de profes - Página Escuela - MOBILE*/
 .profes {
   text-align: center;
@@ -315,72 +297,62 @@ p {
   margin-top: 30px;
 }
 
-.profes-container{
-  display:flex;
+.profes-container {
+  display: flex;
   flex-wrap: wrap;
 }
-
-.profes-card{
+.profes-container .profes-card {
   flex: 100%;
   margin: 10px 50px 0px 50px;
 }
-
-.profes-card img{
-width: 100%;
+.profes-container .profes-card img {
+  width: 100%;
 }
-
-.profes-card p{
+.profes-container .profes-card p {
   text-align: center;
 }
 
 /* Estilos de la grilla de profes - Página Escuela - TABLET*/
 @media screen and (min-width: 768px) {
-  .profes-card{
+  .profes-container .profes-card {
     flex: 50%;
     margin: 0px;
   }
 }
-
 /* Estilos de la grilla de profes - Página Escuela - DESKTOP*/
 @media only screen and (min-width: 1024px) {
-  .profes-card{
-    flex: 25%
+  .profes-container .profes-card {
+    flex: 25%;
   }
 }
-
 /* ESTILOS DE LA PÁGINA PRENSA*/
-
 /* Estilos de prensa con videos de youtube - Página Prensa - MOBILE*/
-.prensa-container{
-  display:flex;
+.prensa-container {
+  display: flex;
   flex-direction: column;
 }
-
-.prensa-card{
+.prensa-container .prensa-card {
   margin: 10px;
 }
-
-.prensa-card iframe{
-width: 100%;
+.prensa-container .prensa-card iframe {
+  width: 100%;
 }
-
-.prensa-card p{
+.prensa-container .prensa-card p {
   text-align: center;
   font-size: 15px;
 }
 
 /* Estilos de prensa con videos de youtube - Página Prensa - DESKTOP*/
 @media only screen and (min-width: 1024px) {
-  .prensa-container{
+  .prensa-container {
     flex-direction: row;
   }
-  .prensa-card{
+  .prensa-container .prensa-card {
     flex: 50%;
   }
 }
-
 /* Estilos links a las notas - Página Prensa*/
-.notas-titulo{
+.notas-titulo {
   text-align: center;
   font-size: 30px;
   background-color: black;
@@ -388,25 +360,22 @@ width: 100%;
   padding: 5px;
 }
 
-.link-notas {
+section .link-notas {
   list-style-type: none;
   margin-top: 15px;
 }
-
-.link-notas a {
+section .link-notas a {
   display: block;
-  font-family: 'roboto', sans-serif; 
+  font-family: "roboto", sans-serif;
   font-size: 15px;
   color: black;
   padding-bottom: 10px;
 }
-
-.link-notas a:visited { /* Cambia el color de los links visitados*/
+section .link-notas a:visited { /* Cambia el color de los links visitados*/
   color: purple;
 }
 
 /* ESTILOS DE LA PÁGINA CONTACTO*/
-
 /* Estilos de la grilla de contacto - Página Contacto - MOBILE*/
 .contacto-grid {
   display: grid; /* Grilla */
@@ -414,40 +383,36 @@ width: 100%;
   grid-auto-rows: auto;
   padding-top: 30px;
 }
-
-.contacto-grid iframe{
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.contacto-card{
+.contacto-grid .contacto-card {
   margin-bottom: 10px;
   padding: 5px;
   display: grid;
   grid-template-rows: 1fr;
   justify-items: center;
 }
-
-.contacto-grid label {
+.contacto-grid .contacto-card form div label {
   display: block;
   margin-bottom: 4px;
-  font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+  font-family: "roboto", sans-serif; /* Selecciona la fuente */
   font-size: 15px;
 }
-
-.contacto-grid input {
+.contacto-grid .contacto-card form div input {
   display: block;
   width: 300px;
   margin-bottom: 15px;
 }
-
-.contacto-grid textarea{
+.contacto-grid .contacto-card form div textarea {
   width: 300px;
   height: 270px;
 }
-
-.contacto-grid p{
-  font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+.contacto-grid .contacto-card iframe {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.contacto-grid .contacto-card p {
+  font-family: "roboto", sans-serif; /* Selecciona la fuente */
   font-size: 15px;
   font-style: italic;
 }
@@ -456,38 +421,18 @@ width: 100%;
 @media only screen and (min-width: 1024px) {
   .contacto-grid {
     display: grid; /* Grilla */
-    grid-template-columns:  1fr 1fr; /* 2 columnas */
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
     grid-auto-rows: auto;
     column-gap: 10px; /* separación entre las columnas */
     padding-left: 10px;
     padding-top: 30px;
   }
-  .maps { 
-    grid-area: 1 / 1 / 2 / 2; 
+  .contacto-grid .maps {
+    grid-area: 1/1/2/2;
   }
-  .mensaje {
-     grid-area: 1 / 2 / 2 / 3; 
-    }
+  .contacto-grid .mensaje {
+    grid-area: 1/2/2/3;
+  }
 }
 
-/* ESTILO DEL FOOTER - TODO EL SITIO */
-
-footer {
-  text-align: center;
-  margin-top: 20px; 
-}
-
-footer a{
-  text-decoration: none; /* Elimina el subrayado de los links */
-}
-
-footer a img{
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-}
-
-footer p{
-  font-family: 'roboto', sans-serif;
-  font-size: 15px;
-}
+/*# sourceMappingURL=style.css.map */

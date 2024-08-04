@@ -1,0 +1,44 @@
+/* ESTILOS DEL HOME */
+  
+/* Estilos de la grilla de novedades - Home - MOBILE*/
+.home-grid {
+    display: none; /* En mobile no se muestra la grilla*/
+}
+  
+.novedades-overlay { /* Texto sobre impreso sobre la imagen del carousel*/
+    position: absolute;
+    top: 10%;
+    font-size: 15px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 20px;
+}
+  
+/* Estilos de la grilla de novedades - Home - TABLET Y DESKTOP*/
+@media screen and (min-width: 768px) {
+    .home-grid {
+        display: grid; /* Grilla */
+        grid-template-columns:  1fr 1fr 1fr; /* 3 columnas */
+        grid-auto-rows: auto;
+        justify-content: center; 
+        column-gap: 10px; /* separación entre las imagenes */
+        padding-left: 10px;
+        padding-right: 10px; 
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    
+        p {
+            font-family: 'roboto', sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            margin-left: 0px;
+        }
+    }
+
+    .home-carousel{
+      display: none; /* En tablet y desktop no se muestra el carrousel*/
+    }
+}

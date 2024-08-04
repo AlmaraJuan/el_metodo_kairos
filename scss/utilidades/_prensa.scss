@@ -1,0 +1,61 @@
+/* ESTILOS DE LA PÁGINA PRENSA*/
+  
+/* Estilos de prensa con videos de youtube - Página Prensa - MOBILE*/
+.prensa-container{
+    display:flex;
+    flex-direction: column;
+
+    .prensa-card{
+        margin: 10px;
+        
+        iframe{
+            width: 100%;
+        }
+        
+        p{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+
+/* Estilos de prensa con videos de youtube - Página Prensa - DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .prensa-container{
+        flex-direction: row;
+        
+        .prensa-card{
+            flex: 50%;
+        }
+    }
+}
+
+/* Estilos links a las notas - Página Prensa*/
+.notas-titulo{
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+section{
+
+    .link-notas {
+        list-style-type: none;
+        margin-top: 15px;
+        
+        a {
+            display: block;
+            font-family: 'roboto', sans-serif; 
+            font-size: 15px;
+            color: black;
+            padding-bottom: 10px;
+        
+
+            &:visited { /* Cambia el color de los links visitados*/
+                color: purple;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/* ESTILOS DEL HEADER */
+  
+header{
+    position: sticky; /* Deja el menu fijo en la parte superior*/
+    top: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 2; /* Para que no quede por debajo del overlay */
+        
+    .navbar-menu{
+        background-color: $color-principal;
+
+        img{
+            margin-left: 10px; 
+            width: 150px;
+        }
+          
+        .boton-menu{
+            background-color: $color-secundario;
+            border-radius: 5px;
+            margin-right: 30px; /* separar del margen derecho el menu desplegable */
+        }
+
+        div{
+            justify-content: right; /* Los item del menu se alinean a la derecha del nav */
+            margin-left: 15px; /* Cuando se despliega el menu collapsado los items se separan del margen izquierdo */
+        
+            ul {
+
+                li {
+                    margin-right: 45px; /* Espacio entre los item del menu y el margen derecho*/
+
+                    .menu-link{
+                        color: white;
+                        font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+                        font-size: 25px;
+                        font-weight: bold; 
+                        text-decoration: none; /* Elimina el subrayado de los items */
+                        transition-duration: 0.6s; /* Tiempo de transcisión con el mouse over */
+                      
+                        &:hover{ 
+                            color:$color-principal; /* cambia color del texto con el mouse over */
+                            background-color: $color-secundario; /* se agrega color de fondo con el mouse over */
+                            border-radius: 5px;
+                            padding: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

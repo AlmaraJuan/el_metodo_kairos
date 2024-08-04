@@ -1,0 +1,103 @@
+/* ESTILOS DE LA PÁGINA CARTELERA*/
+  
+/* Estilos de la grilla cartelera - Página CARTELERA - MOBILE*/
+.cartelera-grid {
+    display: grid; /* Grilla */
+    grid-template-columns:  1fr;  /* 1 columnas */
+    grid-auto-rows: auto;
+    column-gap: 10px; /* separación entre las cards horizontales */
+    row-gap: 5px; /* separación entre las cards vertical */
+    padding-left: 10px;
+    padding-right: 10px; 
+  
+    .grid-obra{
+        background-color: #f9f9f9;
+        border: 1px solid #ddd; /* se agrega borde */
+        border-radius: 8px; /* para hacer el borde más redondo */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* se agrega sombra */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    
+        h2 {
+            background-color: #000000;
+            color: white;
+            padding: 5px;
+            font-style:oblique;
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        .img-overlay {
+        
+            img {
+                width: 100%;
+            }
+
+            .overlay{
+                display: none; /* No se muestra la descripción de la obra en mobile y tablet */
+            }
+        }
+        
+        h3{
+            font-family: 'roboto', sans-serif;
+            font-size: 20px;
+            padding: 10px 5px;
+            font-weight: 700;
+        }
+    }
+}
+  
+/* Estilos de la grilla cartelera - TABLET*/
+@media screen and (min-width: 768px) {
+    .cartelera-grid{
+        grid-template-columns: 1fr 1fr 1fr; /* En tablet se usan 3 columnas*/
+        grid-auto-rows: auto;
+      }
+    }
+  
+/* Estilos de la grilla cartelera - DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .cartelera-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* En desktop se usan 4 columnas*/
+        grid-auto-rows: auto;    
+
+        .grid-obra{
+    
+            .img-overlay {
+                position: relative;/* Para tener texto sobre impreso sobre las imagenes */ 
+    
+                &:hover .overlay{
+                    opacity: 1; /* Mostrar la superposición al pasar el mouse */
+                }
+
+                .overlay {
+                    position: absolute; /* Posición absoluta para superponerse sobre la imagen */
+                    top: 0; /* Alinear la superposición con la parte superior de la imagen */
+                    left: 0; /* Alinear la superposición con la parte izquierda de la imagen */
+                    width: 100%;
+                    height: 100%; 
+                    background-color:rgba(117, 198, 69, 0.5); /* Color translúcido */
+                    opacity: 0; /* Inicialmente transparente */
+                    transition: 0.4s; /* Transición */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        color: white; /* Color del texto */
+                        background-color: black;
+                        width: 100%; /* Para que el background ocupe todo el ancho de la imagen aunque el texto sea corto*/
+                        font-size: 14px;
+                        font-family: 'Roboto', sans-serif; 
+                        font-weight: bold;
+                        font-style: italic;
+                        padding: 10px;
+                        margin: 0;
+                    }                    
+                }    
+            }
+        }
+    }
+}

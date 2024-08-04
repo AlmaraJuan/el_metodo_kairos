@@ -1,0 +1,92 @@
+// variables un valor dentro de una "palabra"
+
+$color-principal: black;
+$color-secundario: #75c645;
+
+// listas
+
+$lista-colores: 
+(red,
+yellow,
+green,
+black,
+pink,)
+;
+
+// mixin
+
+@mixin medidas ($width, $heigh){
+    width: $width;
+    height: $heigh;
+}
+
+//Extend
+
+%bordes{
+    border: 1px solid black;
+    padding: 30px;
+    margin: 50px;
+}
+
+/* ESTILOS DE TODO EL HTML */
+
+*{
+    color: $color-principal; /* aplica a todo el HTML y pisa el color por default de boostrap*/
+  }
+
+  /* ESTILOS DEL MAIN TODO EL SITIO */
+  
+  /* Estilos del MAIN - MOBILE */
+.home-banner {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
+}
+
+h1 {
+    font-family: 'roboto', sans-serif; 
+    font-size: 40px;
+    padding-left: 8px; 
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif; 
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+p {
+    font-family: 'roboto', sans-serif; 
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.carousel-button{ /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
+  background-color: $color-secundario;
+  border-radius: 15px;
+}
+
+.button-black { /* estilos de los botones negros en las páginas*/
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    background-color: $color-principal; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 10px; /* Relleno del botón */
+    
+    &:active{
+        transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .copete {
+    font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
+  }
+}
+
+/* Estilos del MAIN - DESKTOP Y TABLET */
+@media screen and (min-width: 768px) {
+  h1{
+    font-size: 50px; /* Para que el H1 sea más grande en tablet y desktop */
+  }
+}

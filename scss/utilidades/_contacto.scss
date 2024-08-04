@@ -1,0 +1,73 @@
+/* ESTILOS DE LA PÁGINA CONTACTO*/
+  
+/* Estilos de la grilla de contacto - Página Contacto - MOBILE*/
+.contacto-grid {
+    display: grid; /* Grilla */
+    grid-template-columns: 1fr; /* 1 columna */
+    grid-auto-rows: auto;
+    padding-top: 30px;
+    
+    .contacto-card{
+        margin-bottom: 10px;
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        
+        form{
+            
+            div{
+                
+                label {
+                    display: block;
+                    margin-bottom: 4px;
+                    font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+                    font-size: 15px;
+                }
+
+                input {
+                    display: block;
+                    width: 300px;
+                    margin-bottom: 15px;
+                }
+                
+                textarea{
+                    width: 300px;
+                    height: 270px;
+                }
+            }
+        }
+        
+        iframe{
+            width: 100%;
+            margin-bottom: 15px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        
+        p{
+            font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+            font-size: 15px;
+            font-style: italic;
+        }
+    }
+}
+ 
+/* Estilos de la grilla de contacto - Página Contacto - DESKTOP*/
+@media only screen and (min-width: 1024px) {
+    .contacto-grid {
+        display: grid; /* Grilla */
+        grid-template-columns:  1fr 1fr; /* 2 columnas */
+        grid-auto-rows: auto;
+        column-gap: 10px; /* separación entre las columnas */
+        padding-left: 10px;
+        padding-top: 30px;
+    
+        .maps { 
+            grid-area: 1 / 1 / 2 / 2; 
+        }
+        .mensaje {
+            grid-area: 1 / 2 / 2 / 3; 
+        }
+    }
+}

@@ -1,0 +1,21 @@
+/* ESTILO DEL FOOTER - TODO EL SITIO */
+  
+footer {
+  text-align: center;
+  margin-top: 20px; 
+  
+  a{
+    text-decoration: none; /* Elimina el subrayado de los links */
+    
+    img{
+      width: 60px;
+      height: 60px;
+      padding: 10px;
+    }
+  }
+  
+  p{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+  }
+}
