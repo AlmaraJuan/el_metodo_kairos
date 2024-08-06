@@ -7,7 +7,7 @@
     
 .escuela-h2 {
     text-align: center;
-    background-color: #000000;
+    background-color: $color-principal;
     color: white;
     padding: 5px;
     font-style:oblique;
@@ -22,10 +22,7 @@
 /* Estilos de la grilla escuela - Página Escuela - DESKTOP*/
 @media only screen and (min-width: 1024px) {
     .escuela-grid {
-        display: grid; /* Grilla */
-        grid-template-columns:  1fr 1fr 1fr; /* 3 columnas */
-        grid-auto-rows: auto;
-        grid-template-rows: 3fr; /* 3 filas */
+        @include grid (1fr 1fr 1fr);
         justify-content: center; 
         column-gap: 10px; /* separación entre las imagenes */
         padding-left: 10px;
@@ -52,7 +49,7 @@
 .profes {
     text-align: center;
     font-size: 40px;
-    background-color: black;
+    background-color: $color-principal;
     color: white;
     padding: 10px;
     margin-top: 30px;

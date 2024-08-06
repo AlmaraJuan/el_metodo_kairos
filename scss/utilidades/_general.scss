@@ -1,31 +1,16 @@
-// variables un valor dentro de una "palabra"
+// variables
 
 $color-principal: black;
 $color-secundario: #75c645;
-
-// listas
-
-$lista-colores: 
-(red,
-yellow,
-green,
-black,
-pink,)
-;
+$font: 'roboto', sans-serif;
 
 // mixin
 
-@mixin medidas ($width, $heigh){
-    width: $width;
-    height: $heigh;
-}
-
-//Extend
-
-%bordes{
-    border: 1px solid black;
-    padding: 30px;
-    margin: 50px;
+@mixin grid ($grid-columns){
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-auto-rows: auto;
+    column-gap: 10px;
 }
 
 /* ESTILOS DE TODO EL HTML */
@@ -37,25 +22,22 @@ pink,)
   /* ESTILOS DEL MAIN TODO EL SITIO */
   
   /* Estilos del MAIN - MOBILE */
-.home-banner {
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
-}
 
 h1 {
-    font-family: 'roboto', sans-serif; 
+    font-family: $font;
     font-size: 40px;
     padding-left: 8px; 
     margin-top: 10px;
 }
 
 h2 {
-    font-family: 'roboto', sans-serif; 
+    font-family: $font;
     font-size: 30px;
     margin-top: 10px;
 }
 
 p {
-    font-family: 'roboto', sans-serif; 
+    font-family: $font;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 20px;
@@ -67,14 +49,14 @@ p {
 }
 
 .button-black { /* estilos de los botones negros en las páginas*/
-    font-family: 'roboto', sans-serif;
+    font-family: $font;
     font-size: 15px;
     background-color: $color-principal; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     padding: 10px 10px; /* Relleno del botón */
     
     &:active{
-        transform: rotateY('angle'); /* Efecto de "hundimiento" cuando se presiona el botón */
+        transform: rotateY(5deg); /* Efecto de "hundimiento" cuando se presiona el botón */
     }
 }
 

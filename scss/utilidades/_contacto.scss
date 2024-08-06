@@ -2,9 +2,7 @@
   
 /* Estilos de la grilla de contacto - Página Contacto - MOBILE*/
 .contacto-grid {
-    display: grid; /* Grilla */
-    grid-template-columns: 1fr; /* 1 columna */
-    grid-auto-rows: auto;
+    @include grid (1fr);
     padding-top: 30px;
     
     .contacto-card{
@@ -21,7 +19,7 @@
                 label {
                     display: block;
                     margin-bottom: 4px;
-                    font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+                    font-family: $font; 
                     font-size: 15px;
                 }
 
@@ -46,7 +44,7 @@
         }
         
         p{
-            font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+            font-family: $font;
             font-size: 15px;
             font-style: italic;
         }
@@ -56,10 +54,7 @@
 /* Estilos de la grilla de contacto - Página Contacto - DESKTOP*/
 @media only screen and (min-width: 1024px) {
     .contacto-grid {
-        display: grid; /* Grilla */
-        grid-template-columns:  1fr 1fr; /* 2 columnas */
-        grid-auto-rows: auto;
-        column-gap: 10px; /* separación entre las columnas */
+        @include grid (1fr 1fr);
         padding-left: 10px;
         padding-top: 30px;
     

@@ -1,4 +1,8 @@
 /* ESTILOS DEL HOME */
+
+.home-banner {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
+}
   
 /* Estilos de la grilla de novedades - Home - MOBILE*/
 .home-grid {
@@ -17,11 +21,8 @@
 /* Estilos de la grilla de novedades - Home - TABLET Y DESKTOP*/
 @media screen and (min-width: 768px) {
     .home-grid {
-        display: grid; /* Grilla */
-        grid-template-columns:  1fr 1fr 1fr; /* 3 columnas */
-        grid-auto-rows: auto;
+        @include grid (1fr 1fr 1fr);
         justify-content: center; 
-        column-gap: 10px; /* separación entre las imagenes */
         padding-left: 10px;
         padding-right: 10px; 
         
@@ -31,7 +32,7 @@
         }
     
         p {
-            font-family: 'roboto', sans-serif;
+            font-family: $font;
             font-size: 18px;
             font-style: italic;
             margin-left: 0px;

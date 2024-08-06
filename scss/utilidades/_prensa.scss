@@ -34,7 +34,7 @@
 .notas-titulo{
     text-align: center;
     font-size: 30px;
-    background-color: black;
+    background-color: $color-principal;
     color: white;
     padding: 5px;
 }
@@ -47,9 +47,9 @@ section{
         
         a {
             display: block;
-            font-family: 'roboto', sans-serif; 
+            font-family: $font;
             font-size: 15px;
-            color: black;
+            color: $color-principal;
             padding-bottom: 10px;
         
 

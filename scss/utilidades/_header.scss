@@ -32,7 +32,7 @@ header{
 
                     .menu-link{
                         color: white;
-                        font-family: 'roboto', sans-serif; /* Selecciona la fuente */
+                        font-family: $font; /* Selecciona la fuente */
                         font-size: 25px;
                         font-weight: bold; 
                         text-decoration: none; /* Elimina el subrayado de los items */

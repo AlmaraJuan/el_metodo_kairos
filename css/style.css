@@ -6,10 +6,6 @@
 
 /* ESTILOS DEL MAIN TODO EL SITIO */
 /* Estilos del MAIN - MOBILE */
-.home-banner {
-  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
-}
-
 h1 {
   font-family: "roboto", sans-serif;
   font-size: 40px;
@@ -43,7 +39,7 @@ p {
   padding: 10px 10px; /* Relleno del botón */
 }
 .button-black:active {
-  transform: rotateY("angle"); /* Efecto de "hundimiento" cuando se presiona el botón */
+  transform: rotateY(5deg); /* Efecto de "hundimiento" cuando se presiona el botón */
 }
 
 @media screen and (max-width: 767px) {
@@ -118,6 +114,10 @@ footer p {
 }
 
 /* ESTILOS DEL HOME */
+.home-banner {
+  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
+}
+
 /* Estilos de la grilla de novedades - Home - MOBILE*/
 .home-grid {
   display: none; /* En mobile no se muestra la grilla*/
@@ -135,11 +135,11 @@ footer p {
 /* Estilos de la grilla de novedades - Home - TABLET Y DESKTOP*/
 @media screen and (min-width: 768px) {
   .home-grid {
-    display: grid; /* Grilla */
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
+    column-gap: 10px;
     justify-content: center;
-    column-gap: 10px; /* separación entre las imagenes */
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -160,10 +160,10 @@ footer p {
 /* ESTILOS DE LA PÁGINA CARTELERA*/
 /* Estilos de la grilla cartelera - Página CARTELERA - MOBILE*/
 .cartelera-grid {
-  display: grid; /* Grilla */
-  grid-template-columns: 1fr; /* 1 columnas */
+  display: grid;
+  grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  column-gap: 10px; /* separación entre las cards horizontales */
+  column-gap: 10px;
   row-gap: 5px; /* separación entre las cards vertical */
   padding-left: 10px;
   padding-right: 10px;
@@ -236,7 +236,7 @@ footer p {
     background-color: black;
     width: 100%; /* Para que el background ocupe todo el ancho de la imagen aunque el texto sea corto*/
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    font-family: "roboto", sans-serif;
     font-weight: bold;
     font-style: italic;
     padding: 10px;
@@ -251,7 +251,7 @@ footer p {
 
 .escuela-h2 {
   text-align: center;
-  background-color: #000000;
+  background-color: black;
   color: white;
   padding: 5px;
   font-style: oblique;
@@ -266,10 +266,10 @@ footer p {
 /* Estilos de la grilla escuela - Página Escuela - DESKTOP*/
 @media only screen and (min-width: 1024px) {
   .escuela-grid {
-    display: grid; /* Grilla */
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
-    grid-template-rows: 3fr; /* 3 filas */
+    column-gap: 10px;
     justify-content: center;
     column-gap: 10px; /* separación entre las imagenes */
     padding-left: 10px;
@@ -378,9 +378,10 @@ section .link-notas a:visited { /* Cambia el color de los links visitados*/
 /* ESTILOS DE LA PÁGINA CONTACTO*/
 /* Estilos de la grilla de contacto - Página Contacto - MOBILE*/
 .contacto-grid {
-  display: grid; /* Grilla */
-  grid-template-columns: 1fr; /* 1 columna */
+  display: grid;
+  grid-template-columns: 1fr;
   grid-auto-rows: auto;
+  column-gap: 10px;
   padding-top: 30px;
 }
 .contacto-grid .contacto-card {
@@ -393,7 +394,7 @@ section .link-notas a:visited { /* Cambia el color de los links visitados*/
 .contacto-grid .contacto-card form div label {
   display: block;
   margin-bottom: 4px;
-  font-family: "roboto", sans-serif; /* Selecciona la fuente */
+  font-family: "roboto", sans-serif;
   font-size: 15px;
 }
 .contacto-grid .contacto-card form div input {
@@ -412,7 +413,7 @@ section .link-notas a:visited { /* Cambia el color de los links visitados*/
   margin-left: 5px;
 }
 .contacto-grid .contacto-card p {
-  font-family: "roboto", sans-serif; /* Selecciona la fuente */
+  font-family: "roboto", sans-serif;
   font-size: 15px;
   font-style: italic;
 }
@@ -420,10 +421,10 @@ section .link-notas a:visited { /* Cambia el color de los links visitados*/
 /* Estilos de la grilla de contacto - Página Contacto - DESKTOP*/
 @media only screen and (min-width: 1024px) {
   .contacto-grid {
-    display: grid; /* Grilla */
-    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    column-gap: 10px; /* separación entre las columnas */
+    column-gap: 10px;
     padding-left: 10px;
     padding-top: 30px;
   }

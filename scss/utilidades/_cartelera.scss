@@ -2,10 +2,7 @@
   
 /* Estilos de la grilla cartelera - Página CARTELERA - MOBILE*/
 .cartelera-grid {
-    display: grid; /* Grilla */
-    grid-template-columns:  1fr;  /* 1 columnas */
-    grid-auto-rows: auto;
-    column-gap: 10px; /* separación entre las cards horizontales */
+    @include grid (1fr);
     row-gap: 5px; /* separación entre las cards vertical */
     padding-left: 10px;
     padding-right: 10px; 
@@ -41,7 +38,7 @@
         }
         
         h3{
-            font-family: 'roboto', sans-serif;
+            font-family: $font;
             font-size: 20px;
             padding: 10px 5px;
             font-weight: 700;
@@ -87,10 +84,10 @@
 
                     p {
                         color: white; /* Color del texto */
-                        background-color: black;
+                        background-color: $color-principal;
                         width: 100%; /* Para que el background ocupe todo el ancho de la imagen aunque el texto sea corto*/
                         font-size: 14px;
-                        font-family: 'Roboto', sans-serif; 
+                        font-family: $font;
                         font-weight: bold;
                         font-style: italic;
                         padding: 10px;
