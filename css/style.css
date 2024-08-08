@@ -26,6 +26,12 @@ p {
   font-size: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .copete {
+    font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
+  }
+}
+/* Estilos botones */
 .carousel-button { /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
   background-color: #75c645;
   border-radius: 15px;
@@ -42,11 +48,6 @@ p {
   transform: rotateY(5deg); /* Efecto de "hundimiento" cuando se presiona el botón */
 }
 
-@media screen and (max-width: 767px) {
-  .copete {
-    font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
-  }
-}
 /* Estilos del MAIN - DESKTOP Y TABLET */
 @media screen and (min-width: 768px) {
   h1 {
@@ -304,9 +305,17 @@ footer p {
 .profes-container .profes-card {
   flex: 100%;
   margin: 10px 50px 0px 50px;
+  /*Animación para que los nombres de los profes aparezcan sobre la foto con mouse over*/
 }
 .profes-container .profes-card img {
   width: 100%;
+}
+.profes-container .profes-card:hover p {
+  transform: translateY(-100px);
+  text-decoration: underline;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 20px;
 }
 .profes-container .profes-card p {
   text-align: center;

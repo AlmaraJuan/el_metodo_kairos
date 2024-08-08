@@ -1,74 +1,61 @@
-// variables
-
-$color-principal: black;
-$color-secundario: #75c645;
-$font: 'roboto', sans-serif;
-
-// mixin
-
-@mixin grid ($grid-columns){
-    display: grid;
-    grid-template-columns: $grid-columns;
-    grid-auto-rows: auto;
-    column-gap: 10px;
-}
-
 /* ESTILOS DE TODO EL HTML */
 
 *{
-    color: $color-principal; /* aplica a todo el HTML y pisa el color por default de boostrap*/
-  }
+  color: $color-principal; /* aplica a todo el HTML y pisa el color por default de boostrap*/
+}
 
-  /* ESTILOS DEL MAIN TODO EL SITIO */
-  
-  /* Estilos del MAIN - MOBILE */
+/* ESTILOS DEL MAIN TODO EL SITIO */
+
+/* Estilos del MAIN - MOBILE */
 
 h1 {
-    font-family: $font;
-    font-size: 40px;
-    padding-left: 8px; 
-    margin-top: 10px;
+  font-family: $font;
+  font-size: 40px;
+  padding-left: 8px; 
+  margin-top: 10px;
 }
 
 h2 {
-    font-family: $font;
-    font-size: 30px;
-    margin-top: 10px;
+  font-family: $font;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
 p {
-    font-family: $font;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.carousel-button{ /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
-  background-color: $color-secundario;
-  border-radius: 15px;
-}
-
-.button-black { /* estilos de los botones negros en las páginas*/
-    font-family: $font;
-    font-size: 15px;
-    background-color: $color-principal; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 10px; /* Relleno del botón */
-    
-    &:active{
-        transform: rotateY(5deg); /* Efecto de "hundimiento" cuando se presiona el botón */
-    }
+  font-family: $font;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 767px) {
-  .copete {
-    font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
+.copete {
+  font-size: 15px; /* Para que el texto debajo de los H1 en mobile se vea más pequeño */
+}
+}
+
+/* Estilos botones */
+
+.carousel-button{ /* Fondo verde para que el botón del carrousel sea más visible sobre las imagenes*/
+background-color: $color-secundario;
+border-radius: 15px;
+}
+
+.button-black { /* estilos de los botones negros en las páginas*/
+  font-family: $font;
+  font-size: 15px;
+  background-color: $color-principal; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 10px; /* Relleno del botón */
+  
+  &:active{
+      transform: rotateY(5deg); /* Efecto de "hundimiento" cuando se presiona el botón */
   }
 }
 
 /* Estilos del MAIN - DESKTOP Y TABLET */
 @media screen and (min-width: 768px) {
-  h1{
-    font-size: 50px; /* Para que el H1 sea más grande en tablet y desktop */
-  }
+h1{
+  font-size: 50px; /* Para que el H1 sea más grande en tablet y desktop */
+}
 }

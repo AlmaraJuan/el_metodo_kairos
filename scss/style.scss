@@ -1,4 +1,6 @@
-@import "utilidades/general"; // contiene definicion de variables y estilos que aplican a todos los HTML.
+@import "utilidades/variables"; // contiene definicion de variables.
+@import "utilidades/mixin"; // contiene definicion de variables.
+@import "utilidades/general"; // Estilos que aplican a todos los HTML.
 @import "utilidades/header"; // Estilos del header --> aplican a todos los HTML
 @import "utilidades/footer"; // Estilos del footer --> aplican a todos los HTML
 @import "utilidades/index"; // Estilos del Index

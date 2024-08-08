@@ -1,0 +1,8 @@
+// mixin
+
+@mixin grid ($grid-columns){
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-auto-rows: auto;
+    column-gap: 10px;
+}
