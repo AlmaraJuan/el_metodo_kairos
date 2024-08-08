@@ -99,7 +99,7 @@ header .navbar-menu div ul li .menu-link:hover {
 /* ESTILO DEL FOOTER - TODO EL SITIO */
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 footer a {
   text-decoration: none; /* Elimina el subrayado de los links */
