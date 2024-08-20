@@ -96,24 +96,6 @@ header .navbar-menu div ul li .menu-link:hover {
   padding: 8px;
 }
 
-/* ESTILO DEL FOOTER - TODO EL SITIO */
-footer {
-  text-align: center;
-  margin-top: 30px;
-}
-footer a {
-  text-decoration: none; /* Elimina el subrayado de los links */
-}
-footer a img {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-}
-footer p {
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-}
-
 /* ESTILOS DEL HOME */
 .home-banner {
   width: 100%; /* Establece el ancho de la imagen al 100% del contenedor padre */
@@ -443,6 +425,23 @@ section .link-notas a:visited { /* Cambia el color de los links visitados*/
   .contacto-grid .mensaje {
     grid-area: 1/2/2/3;
   }
+}
+/* ESTILO DEL FOOTER - TODO EL SITIO */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+footer a {
+  text-decoration: none; /* Elimina el subrayado de los links */
+}
+footer a img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+footer p {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
